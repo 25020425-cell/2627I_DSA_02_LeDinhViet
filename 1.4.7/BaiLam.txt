@@ -1,0 +1,15 @@
+Với mỗi bộ ba (i, j, k) mà i < j < k, vòng lặp trong cùng thực hiện:
+
+3 lần truy cập mảng (đọc a[i], a[j], a[k])
+2 phép cộng số nguyên
+1 phép so sánh (== 0)
+
+Số bộ ba xét đến = C(N,3) = N(N-1)(N-2)/6 ~ N³/6.
+
+Suy ra:
+
+Số lần truy cập mảng ~ 3 · N³/6 = N³/2
+Số phép cộng ~ 2 · N³/6 = N³/3
+Số phép so sánh ~ N³/6
+
+So sánh: Dù chọn phép toán nào làm đơn vị chi phí (truy cập mảng, phép cộng, hay so sánh), bậc tăng trưởng tổng thể đều là Θ(N³) — không đổi. Tuy nhiên hệ số nhân (leading coefficient) khác nhau tùy loại phép toán (N³/2 so với N³/6) — đây chính là lý do vì sao khi so sánh thời gian chạy thực tế giữa hai thuật toán cùng bậc N³ (hoặc giữa thuật toán bậc N² và N³), chỉ dùng ký hiệu tilde/Θ là chưa đủ chính xác; cần mô hình chi phí cụ thể hơn (đếm chính xác phép toán chiếm nhiều thời gian nhất trên phần cứng thực tế, ví dụ truy cập mảng) để so sánh công bằng.

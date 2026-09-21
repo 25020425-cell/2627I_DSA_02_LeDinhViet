@@ -1,0 +1,8 @@
+Biểu thức	Xấp xỉ (order of growth)	Giải thích ngắn
+a. N + 1	Θ(N)	Tuyến tính
+b. 1 + 1/N	Θ(1)	Tiến về 1 khi N→∞
+c. (1+1/N)(1+2/N)	Θ(1)	Tiến về 1 khi N→∞
+d. 2N³ - 15N² + N	Θ(N³)	Số hạng bậc cao nhất thống trị
+e. lg(2N)/lgN	Θ(1)	= (lgN + 1)/lgN → 1
+f. lg(N²+1)/lgN	Θ(1)	≈ 2lgN/lgN → 2
+g. N¹⁰⁰/2ᴺ	→ 0	Hàm mũ ở mẫu luôn áp đảo mọi đa thức ở tử

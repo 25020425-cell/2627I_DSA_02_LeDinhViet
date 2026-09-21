@@ -1,0 +1,19 @@
+Cơ sở quy nạp (N = 2): Không thể chọn được bộ ba nào từ 2 phần tử → số bộ ba = 0. Công thức: 2·1·0/6 = 0. ✓ Khớp.
+
+Giả thiết quy nạp: Giả sử với N = k, số bộ ba chọn từ k phần tử là k(k-1)(k-2)/6.
+
+Bước quy nạp (N = k+1): Khi thêm phần tử thứ (k+1) vào tập k phần tử, mọi bộ ba của tập mới thuộc một trong hai loại:
+
+Không chứa phần tử mới: số bộ ba = k(k-1)(k-2)/6 (theo giả thiết quy nạp).
+Có chứa phần tử mới: cần chọn thêm 2 phần tử từ k phần tử còn lại → C(k,2) = k(k-1)/2 cách.
+
+Tổng số bộ ba với k+1 phần tử:
+
+k(k-1)(k-2)/6 + k(k-1)/2 = k(k-1) x [(k-2)/6 + 3/6] = k(k-1)(k+1)/6
+
+So với công thức cần chứng minh tại N = k+1:
+(k+1)(k+1-1)(k+1-2)/6 = (k+1) x k x (k-1)/6 = k(k-1)(k+1)/6
+
+→ Trùng khớp hoàn toàn với kết quả vừa tính ở trên.
+
+Vậy theo nguyên lý quy nạp toán học, công thức N(N-1)(N-2)/6 đúng với mọi N ≥ 2.

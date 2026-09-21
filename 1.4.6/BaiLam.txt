@@ -1,0 +1,5 @@
+a. Vòng ngoài chia đôi n mỗi lần (N, N/2, N/4, ..., 1) → ~log₂N vòng lặp. Vòng trong chạy n lần ứng với mỗi giá trị. Tổng = N + N/2 + N/4 + ... + 1 ≈ 2N → Θ(N).
+
+b. Vòng ngoài i nhân đôi (1, 2, 4, ..., ~N) → ~log₂N vòng lặp. Vòng trong chạy i lần. Tổng = 1+2+4+...+N/2 ≈ N (tổng cấp số nhân bị chi phối bởi số hạng cuối) → Θ(N).
+
+c. Vòng ngoài i nhân đôi → ~log₂N vòng lặp. Vòng trong luôn chạy đủ N lần bất kể i. Tổng = N · log₂N → Θ(N log N).
